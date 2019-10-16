@@ -1,0 +1,17 @@
+---
+service:
+  internalPort: 9292
+  externalPort: 9292
+
+image:
+  repository: czm41k/ui
+  tag: latest
+
+ingress:
+  class: nginx
+
+postHost:
+postPort:
+commentHost:
+commentPort:
+...

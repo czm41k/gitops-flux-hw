@@ -1,0 +1,22 @@
+---
+apiVersion: flux.weave.works/v1beta1
+kind: HelmRelease
+metadata:
+  name: reddit-ui
+  namespace: demo-flagger
+  annotations:
+    # flux.weave.works/tag.chart-image: semver:~0.1
+    # fluxcd.io/tag.comment: semver:~0.1
+    # fluxcd.io/tag.post: semver:~0.1
+    # fluxcd.io/tag.ui: semver:~0.1
+    fluxcd.io/automated: 'true'
+spec:
+  releaseName: reddit-ui
+  chart:
+    git: git@github.com:czm41k/reddit-flux
+    path: charts/ui
+    ref: master
+  values:
+    image:
+      repository: czm41k/ui
+      tag: 0.1.3
