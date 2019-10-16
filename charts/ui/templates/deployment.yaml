@@ -9,8 +9,6 @@ metadata:
     release: {{ .Release.Name }}
 spec:
   replicas: 3
-  strategy:
-    type: Recreate
   selector:
     matchLabels:
       app: reddit
