@@ -11,6 +11,7 @@ metadata:
     # fluxcd.io/tag.ui: semver:~0.1
     fluxcd.io/automated: 'true'
     fluxcd.io/ignore: "false"
+    fluxcd.io/tag.chart-image: semver:~0.1
 spec:
   releaseName: reddit-ui
   chart:
