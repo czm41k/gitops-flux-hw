@@ -19,4 +19,4 @@ spec:
       repository: czm41k/ui
       tag: 0.1.3
     service:
-      enabled: false
+      enabled: true
