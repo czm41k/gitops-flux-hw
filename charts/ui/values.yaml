@@ -2,6 +2,7 @@
 service:
   internalPort: 9292
   externalPort: 9292
+  enabled: true
 
 image:
   repository: czm41k/ui
