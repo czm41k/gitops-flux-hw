@@ -21,4 +21,4 @@ spec:
   values:
     image:
       repository: czm41k/ui
-      tag: 0.1.2
+      tag: 0.1.3
