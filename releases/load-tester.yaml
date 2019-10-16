@@ -5,7 +5,8 @@ metadata:
   name: load-t
   namespace: demo-flagger
   annotations:
-    fluxcd.io/ignore: "true"
+    # fluxcd.io/ignore: "true"
+    flux.weave.works/ignore: "true"
     flux.weave.works/automated: "false"
 spec:
   releaseName: load-t
