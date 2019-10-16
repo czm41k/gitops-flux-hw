@@ -6,6 +6,7 @@ metadata:
   namespace: demo-flagger
   annotations:
     fluxcd.io/ignore: "true"
+    flux.weave.works/automated: "false"
 spec:
   releaseName: load-t
   chart:
