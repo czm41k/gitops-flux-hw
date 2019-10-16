@@ -6,7 +6,6 @@ metadata:
   namespace: demo-flagger
   annotations:
     fluxcd.io/ignore: "false"
-    fluxcd.io/automated: 'true'
     fluxcd.io/locked: 'false'
     # fluxcd.io/locked_user: czm41k <etselikov@express42.com>
 spec:
