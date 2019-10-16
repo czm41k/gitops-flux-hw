@@ -2,18 +2,18 @@
 apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
-  name: load-tester
+  name: load-t
   namespace: demo-flagger
   annotations:
-    fluxcd.io/ignore: "true"
+    fluxcd.io/ignore: "false"
 spec:
-  releaseName: load-tester-new
+  releaseName: load-t
   chart:
     git: https://github.com/weaveworks/flagger
     ref: 0.18.4
     path: charts/loadtester
   values:
-    fullnameOverride: load-tester-new
+    fullnameOverride: load-t
     service:
       type: ClusterIP
       port: 9292
