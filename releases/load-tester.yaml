@@ -5,17 +5,18 @@ metadata:
   name: load-tester
   namespace: demo-flagger
   annotations:
-    fluxcd.io/ignore: "true"
+    fluxcd.io/ignore: "false"
 spec:
-  releaseName: load-tester
+  releaseName: load-tester-new
   chart:
     git: https://github.com/weaveworks/flagger
     ref: 0.18.4
     path: charts/loadtester
   values:
     fullnameOverride: load-tester
-    service:
-      type: ClusterIP
-      port: 9292
+    # service:
+    #   type: ClusterIP
+    #   port: 9292
+---
 
 
