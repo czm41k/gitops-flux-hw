@@ -4,7 +4,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: reddit-ui
+  name: ui-service
   labels:
     app: reddit
     component: ui
