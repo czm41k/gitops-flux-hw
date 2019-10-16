@@ -5,8 +5,8 @@ metadata:
   name: load-tester
   namespace: demo-flagger
   annotations:
-    fluxcd.io/ignore: "false"
-    fluxcd.io/automated: 'true'
+    fluxcd.io/ignore: "true"
+    fluxcd.io/automated: 'false'
 spec:
   releaseName: load-tester
   chart:

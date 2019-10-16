@@ -10,6 +10,7 @@ metadata:
     # fluxcd.io/tag.post: semver:~0.1
     # fluxcd.io/tag.ui: semver:~0.1
     fluxcd.io/automated: 'true'
+    fluxcd.io/ignore: "false"
 spec:
   releaseName: reddit-ui
   chart:
