@@ -1,0 +1,1 @@
+{"jobID":"407c5535-7247-1d94-4159-6c2ac6a8304b","spec":{"type":"policy","cause":{"Message":"","User":"czm41k \u003cetselikov@express42.com\u003e"},"spec":{"demo-flagger:helmrelease/load-tester":{"add":{"locked":"true","locked_msg":"","locked_user":"czm41k \u003cetselikov@express42.com\u003e"},"remove":{}}}},"result":null}
