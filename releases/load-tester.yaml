@@ -5,7 +5,7 @@ metadata:
   name: load-t
   namespace: demo-flagger
   annotations:
-    fluxcd.io/ignore: "false"
+    fluxcd.io/ignore: "true"
 spec:
   releaseName: load-t
   chart:
