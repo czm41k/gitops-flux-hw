@@ -5,7 +5,6 @@ metadata:
   name: reddit-ui
   namespace: demo-flagger
   annotations:
-    fluxcd.io/automated: 'true'
     fluxcd.io/ignore: "false"
     fluxcd.io/tag.chart-image: semver:~0.1
 spec:
