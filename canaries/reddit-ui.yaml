@@ -19,19 +19,19 @@ spec:
     port: 9292
   # promote the canary without analysing it (default false)
   skipAnalysis: true
-  canaryAnalysis:
-    interval: 10s
-    stepWeight: 5
-    threshold: 5
-    metrics:
-    - name: request-success-rate
-      threshold: 99
-      interval: 1m
-    - name: request-duration
-      threshold: 500
-      interval: 1m
-    webhooks:
-      - name: load-test
-        url: http://load-tester.flagger-demo/
-        metadata:
-          cmd: "hey -z 2m -q 10 -c 2 http://reddit-ui:9292/"
+  # canaryAnalysis:
+  #   interval: 10s
+  #   stepWeight: 5
+  #   threshold: 5
+  #   metrics:
+  #   - name: request-success-rate
+  #     threshold: 99
+  #     interval: 1m
+  #   - name: request-duration
+  #     threshold: 500
+  #     interval: 1m
+  #   webhooks:
+  #     - name: load-test
+  #       url: http://load-tester.flagger-demo/
+  #       metadata:
+  #         cmd: "hey -z 2m -q 10 -c 2 http://reddit-ui:9292/"
