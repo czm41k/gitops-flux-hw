@@ -13,7 +13,7 @@ spec:
     ref: 0.18.4
     path: charts/loadtester
   values:
-    fullnameOverride: load-tester
+    fullnameOverride: load-tester-new
     # service:
     #   type: ClusterIP
     #   port: 9292
