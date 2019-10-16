@@ -6,7 +6,7 @@ metadata:
   namespace: demo-flagger
   annotations:
     fluxcd.io/ignore: "false"
-    # fluxcd.io/tag.chart-image: semver:~0.1
+    # fluxcd.io/tag.chart-image: semver:~0.2
     fluxcd.io/automated: 'true'
 spec:
   rollback:
@@ -23,6 +23,6 @@ spec:
   values:
     image:
       repository: czm41k/ui
-      tag: 0.1.4
+      tag: 0.2.0
     service:
       enabled: true
