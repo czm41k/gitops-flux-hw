@@ -6,8 +6,8 @@ metadata:
   namespace: demo-flagger
   annotations:
     fluxcd.io/ignore: "false"
-    fluxcd.io/automated: 'true'
-    fluxcd.io/locked: 'false'
+    fluxcd.io/automated: 'false'
+    fluxcd.io/locked: 'true'
     fluxcd.io/locked_user: czm41k <etselikov@express42.com>
 spec:
   releaseName: load-tester
