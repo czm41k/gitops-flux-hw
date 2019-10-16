@@ -1,0 +1,30 @@
+apiVersion: flagger.app/v1alpha3
+kind: Canary
+metadata:
+  name: reddit-ui
+  namespace: demo-flagger
+  annotations:
+    fluxcd.io/ignore: "true"
+spec:
+  targetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: reddit-ui
+  service:
+    port: 9292
+  canaryAnalysis:
+    interval: 10s
+    stepWeight: 5
+    threshold: 5
+    metrics:
+    - name: request-success-rate
+      threshold: 99
+      interval: 1m
+    - name: request-duration
+      threshold: 500
+      interval: 1m
+    webhooks:
+      - name: load-test
+        url: http://load-tester.flagger-demo/
+        metadata:
+          cmd: "hey -z 2m -q 10 -c 2 http://reddit-ui:9292/"
