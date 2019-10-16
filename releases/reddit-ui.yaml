@@ -23,6 +23,6 @@ spec:
   values:
     image:
       repository: czm41k/ui
-      tag: 0.2.1
+      tag: 0.2.2
     service:
       enabled: true
