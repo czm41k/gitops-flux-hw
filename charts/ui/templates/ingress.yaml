@@ -12,6 +12,6 @@ spec:
       http:
         paths:
           - backend:
-              serviceName: reddit-ui
+              serviceName: ui-service
               servicePort: {{ .Values.service.internalPort }}
 ...
