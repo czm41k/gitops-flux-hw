@@ -7,7 +7,6 @@ metadata:
   annotations:
     fluxcd.io/ignore: "false"
     fluxcd.io/tag.chart-image: semver:~0.2
-    fluxcd.io/automated: 'true'
 spec:
   rollback:
     # If set, will perform rollbacks for this release.
