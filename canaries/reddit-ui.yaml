@@ -6,9 +6,14 @@ metadata:
   annotations:
     fluxcd.io/ignore: "false"
 spec:
+  provider: nginx
   targetRef:
     apiVersion: apps/v1
     kind: Deployment
+    name: reddit-ui
+  ingressRef:
+    apiVersion: extensions/v1beta1
+    kind: Ingress
     name: reddit-ui
   service:
     port: 9292
