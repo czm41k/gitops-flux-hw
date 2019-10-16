@@ -8,11 +8,10 @@ metadata:
     nginx.ingress.kubernetes.io/ssl-redirect: "false"
 spec:
   rules:
-  - host: reddit.104.199.20.0.nip.io
-    http:
-      paths:
-      - path: /*
-        backend:
-          serviceName: {{ template "ui.fullname" . }}
-          servicePort: {{ .Values.service.internalPort }}
+    - host: reddit.104.199.20.0.nip.io
+      http:
+        paths:
+          - backend:
+              serviceName: ui-service
+              servicePort: {{ .Values.service.internalPort }}
 ...
