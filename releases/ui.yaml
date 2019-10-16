@@ -14,7 +14,7 @@ metadata:
 spec:
   releaseName: reddit-ui
   chart:
-    git: git@github.com:czm41k/reddit-flux
+    git: git@github.com:czm41k/gitops-flux-hw
     path: charts/ui
     ref: master
   values:
