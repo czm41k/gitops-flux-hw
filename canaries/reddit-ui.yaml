@@ -4,7 +4,7 @@ metadata:
   name: reddit-ui
   namespace: demo-flagger
   annotations:
-    fluxcd.io/ignore: "true"
+    fluxcd.io/ignore: "false"
 spec:
   targetRef:
     apiVersion: apps/v1
