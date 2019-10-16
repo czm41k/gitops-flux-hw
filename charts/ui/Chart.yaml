@@ -1,7 +1,7 @@
 ---
 apiVersion: v1
 name: ui
-version: 1.1.4
+version: 1.1.5
 description: OTUS reddit application UI homework
 home: https://github.com/czm41k/helm-charts/
 maintainers:

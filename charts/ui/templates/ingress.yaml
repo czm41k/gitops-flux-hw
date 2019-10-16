@@ -8,7 +8,8 @@ metadata:
     nginx.ingress.kubernetes.io/ssl-redirect: "false"
 spec:
   rules:
-  - http:
+  - host: reddit.104.199.20.0.nip.io
+    http:
       paths:
       - path: /*
         backend:
